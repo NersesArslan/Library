@@ -1,6 +1,7 @@
 
 
-let myLibrary = [book1, book2, book3];
+
+
  
 
 function Book(title, author) {
@@ -14,15 +15,17 @@ function Book(title, author) {
    const book2 = new Book('Les Miserables', 'Victor Hugo' )
    const book3 = new Book('Death and the Dervish', 'Mesa Selimovic')
 
+   let myLibrary = [book1, book2, book3];
 
-   
-   function addBooktoLib(){
-    let title = prompt("Enter a book's title: ")
-    let author = prompt("Enter author's name: ")
+  ;
+
+  const addButton = document.getElementById('btn');
+  const shelf = document.querySelector('.shelf')
+  
+
+  addButton.addEventListener('click', () => {
+    const book = document.createElement('div')
+  book.classList.add('book')
+    shelf.appendChild(book);
     
-       let book = new Book(title, author)
-       myLibrary.push(book);
-       return myLibrary;
-   }
-
-   
+  })
