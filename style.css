@@ -10,5 +10,11 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid black;
+}
 
+.shelf {
+    height: 50%;
+    width: 50%;
+    border: 1px dashed orange;
 }
