@@ -14,8 +14,22 @@
             <div class="shelf" id="shelf">
 
             </div>
-           <button id="btn">New Book</button>
-           
+           <div class="buttoncontainer">
+               <button id="btn">New Book</button>
+               <form action="" id="formElement" style="display: none">
+                <h3>New Book</h3>
+               
+                <input type="text" id="bookTitle" placeholder="Title" maxlenght="100" required>
+               
+                <input type="text" id="bookAuthor" placeholder="Author" maxlength="100" required>
+                <div class="checkbox-container">
+                    <label for="">Have you read this?</label>
+                    <input type="checkbox" value="readStatus" id="isRead">
+                </div>
+
+                <button type="submit" id="submitBtn">Submit</button>
+                         </form>
+           </div>
     </div>
 </body>
 </html>

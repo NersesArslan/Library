@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    background-color: var(--secondary-color);
 }
 :root {
     --border-radius: 8px;
@@ -11,12 +12,24 @@ html, body {
     --spacing-lg: 20px;
     --spacing-xl: 40px;
     --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --primary-color: #f1f5f9;
+    --secondary-color: #94a3b8;
 }
 .container {
    margin: 20px 0 0 15px;
    height: 100%;
    display: flex;
+    
+   
    flex-direction: column;
+}
+
+.buttoncontainer {
+    display: flex;
+   
+    align-items: center;
+    flex-direction: column;
+
 }
 
 .shelf {
@@ -46,6 +59,22 @@ html, body {
     box-shadow:var(--shadow);
     border-radius: var(--border-radius);
     line-height: 1.2;
+    background-color: var(--primary-color);
+    
+}
+
+#formElement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+    background-color: var(--primary-color);
+    width: 300px;
+    border-radius: var(--border-radius);
+}
+    
+.checkbox-container{
+    display: flex;
     
 }
 
